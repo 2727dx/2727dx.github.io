@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+	标签分为两类：开始标签和结束标签成对出现，自开闭标签没有配对
+	网页中的所有内容都必须卸载<html>head和body</html>中
+	网页中的内容写在<body>显示给用户看</body>
+	html弱语言，哪里报错哪里跳过，java是强语言，哪里报错，停在哪里
+	div是一个块级标签，包罗万象，可以嵌套任意标签，也可以互相嵌套
+-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>html练习</title>
+	</head>
+	<body>
+		<a href="#div" >锚链接</a>
+		<!--标题标签-->
+		<h1 style="color: red;">一级标签</h1>
+		<h2 style="color: blue;">二级标签</h2>
+		<h3 style="color: yellow;">三级标签</h3>
+		<h4 style="color: green;">四级标签</h4>
+		<h5 style="color: gold;">五级标签</h5>
+		<h6>六级标签</h6>
+		
+		<!--文本标签-->
+		<!--p标签是段落标签，独占一行，块级元素-->
+		<p>什么时候能放假</p>
+			
+		<!--span标记标签，行内拼接，航迹元素，凸显文本-->
+		<span>做梦没睡醒</span>
+		
+		<!--strong字体加粗标签-->
+		<strong>做梦</strong>
+		
+		<!--em斜体标签，行内拼接，行级元素，强调文字-->
+		<em>现在是2022</em>
+		<hr />
+		<!--列表标签-->
+		<!--ul无序列表
+			ul>(li{吃饭}+li{睡觉})+tab快速生成
+			ul标签属性type="circle"空心圆，disc默认实心圆
+		-->
+		<ul type="square">
+			<li>吃饭</li>
+			<li>睡觉</li>
+		</ul>
+		<!--ol有序列表
+			ol属性默认值为1，a，A，i，I
+		-->
+		<ol type="i">
+			<li>数学</li>
+			<li>语文</li>
+		</ol>
+		<!--自定义列表，dl，dt标题，dd列表项-->
+		<!--dl>(dt{明天没有晚自习}>(dd{睡觉}+dd{战斗}))-->
+		<dl>
+			<dt>明天没有晚自习
+				<dd>战斗</dd>
+				<dd>睡觉</dd>
+			</dt>
+		</dl>
+		
+		<!--div容器标签,可以嵌套任意标签-->
+		<div>
+			<a name="div">快速跳转</a>
+			<p>
+				今晚有晚自习
+				<label>
+					一堆堆的
+					<strong>任务</strong>
+				</label>
+			</p>
+		</div>
+
+		<!--表格标签，table,tr行,td列,跨行rowspan，跨列clospan-->
+		<!--三行三列表格table>(tr>td*3)*3-->
+		<table border="1">
+			<tr>
+				<td>学生编号</td>
+				<td>学生姓名</td>
+				<td>学生年龄</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>ho</td>
+				<td>18</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>xw</td>
+				<td>16</td>
+			</tr>
+		</table>
+		<table border="1">
+			<tr>
+				<td>班级</td>
+				<td>科目</td>
+				<td colspan="2">学生信息</td>
+			</tr>
+			<tr>
+				<td rowspan="2">ar-321</td>
+				<td rowspan="2">java</td>
+				<td>序号</td>
+				<td>姓名</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>xx</td>
+			</tr>
+			<tr>
+				<td>ar-322</td>
+				<td>mysql</td>
+				<td>2</td>
+				<td>xw</td>
+			</tr>
+		</table>
+		<br />
+		<table border="1">
+			<tr>
+				<td>班级</td>
+				<td colspan="2">信息</td>
+			</tr>
+			<tr>
+				<td rowspan="2">ar-321</td>
+				<td>序号</td>
+				<td>姓名</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>xx</td>
+			</tr>
+		</table>
+	</body>
+</html>
